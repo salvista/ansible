@@ -8,3 +8,30 @@
     "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
     "unreachable": true
 }
+2018-06-27 05:02:47,158 p=22359 u=rina |  deployserver-rina | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-06-27 05:03:35,676 p=22521 u=rina |  deployserver-rina | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-06-27 06:42:19,202 p=10224 u=rina |  - downloading role 'datadog', owned by Datadog
+2018-06-27 06:42:21,101 p=10224 u=rina |  - downloading role from https://github.com/DataDog/ansible-datadog/archive/2.2.0.tar.gz
+2018-06-27 06:42:22,959 p=10224 u=rina |  - extracting Datadog.datadog to /home/rina/development/ansible/roles/Datadog.datadog
+2018-06-27 06:42:22,964 p=10224 u=rina |  - Datadog.datadog (2.2.0) was installed successfully
+2018-06-27 06:42:23,794 p=10224 u=rina |  - downloading role 'mysql', owned by geerlingguy
+2018-06-27 06:42:26,669 p=10224 u=rina |  - downloading role from https://github.com/geerlingguy/ansible-role-mysql/archive/2.9.0.tar.gz
+2018-06-27 06:42:28,452 p=10224 u=rina |  - extracting geerlingguy.mysql to /home/rina/development/ansible/roles/geerlingguy.mysql
+2018-06-27 06:42:28,456 p=10224 u=rina |  - geerlingguy.mysql (2.9.0) was installed successfully
+2018-06-27 06:42:29,285 p=10224 u=rina |  - downloading role 'nginx', owned by hxpro
+2018-06-27 06:42:30,970 p=10224 u=rina |  - downloading role from https://github.com/hxpro/ansible-role-nginx/archive/master.tar.gz
+2018-06-27 06:42:32,998 p=10224 u=rina |  - extracting hxpro.nginx to /home/rina/development/ansible/roles/hxpro.nginx
+2018-06-27 06:42:33,001 p=10224 u=rina |  - hxpro.nginx (master) was installed successfully
+2018-06-27 06:42:33,001 p=10224 u=rina |  - adding dependency: hxpro.epel
+2018-06-27 06:42:33,833 p=10224 u=rina |  - downloading role 'epel', owned by hxpro
+2018-06-27 06:42:35,532 p=10224 u=rina |  - downloading role from https://github.com/hxpro/ansible-role-epel/archive/v0.1.tar.gz
+2018-06-27 06:42:37,309 p=10224 u=rina |  - extracting hxpro.epel to /home/rina/development/ansible/roles/hxpro.epel
+2018-06-27 06:42:37,311 p=10224 u=rina |  - hxpro.epel (v0.1) was installed successfully
