@@ -1,0 +1,24 @@
+# Ansible inventory file
+
+#########################################################
+# Exhaustive list of hosts (for the Ansible "all" target)
+#########################################################
+
+deployserver-rina ansible_ssh_private_key_file=~/.ssh/id_rsa-aws
+
+###########
+# Groups
+###########
+
+[appservers]
+deployserver-rina ansible_ssh_private_key_file=~/.ssh/id_rsa-aws
+
+[dbservers]
+deployserver-rina ansible_ssh_private_key_file=~/.ssh/id_rsa-aws
+
+[yumrepos]
+deployserver-rina ansible_ssh_private_key_file=~/.ssh/id_rsa-aws
+
+
+
+

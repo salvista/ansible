@@ -1,0 +1,10 @@
+2018-06-27 04:23:18,815 p=12538 u=rina |  deployserver-rina | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
+2018-06-27 04:26:42,514 p=13376 u=rina |  deployserver-rina | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).\r\n", 
+    "unreachable": true
+}
