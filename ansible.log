@@ -35,3 +35,16 @@
 2018-06-27 06:42:35,532 p=10224 u=rina |  - downloading role from https://github.com/hxpro/ansible-role-epel/archive/v0.1.tar.gz
 2018-06-27 06:42:37,309 p=10224 u=rina |  - extracting hxpro.epel to /home/rina/development/ansible/roles/hxpro.epel
 2018-06-27 06:42:37,311 p=10224 u=rina |  - hxpro.epel (v0.1) was installed successfully
+2018-07-03 23:14:29,194 p=12783 u=rina |   [WARNING]: Unable to parse /home/rina/development/ansible/host as an inventory
+source
+
+2018-07-03 23:14:29,195 p=12783 u=rina |   [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2018-07-03 23:14:29,196 p=12783 u=rina |   [WARNING]: Could not match supplied host pattern, ignoring: all
+
+2018-07-03 23:14:29,196 p=12783 u=rina |   [WARNING]: provided hosts list is empty, only localhost is available
+
+2018-07-03 23:14:29,197 p=12783 u=rina |   [WARNING]: Could not match supplied host pattern, ignoring: *
+
+2018-07-03 23:14:29,197 p=12783 u=rina |   [WARNING]: No hosts matched, nothing to do
+
