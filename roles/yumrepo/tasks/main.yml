@@ -16,9 +16,14 @@
       name: createrepo
       state: present
 
-- name: ensure yumutils is installed
+- name: ensure createrepo is installed
   package:
-      name: yum-utils
+      name: createrepo
+      state: present
+
+- name: ensure wget is installed
+  package:
+      name: wget
       state: present
 
 - name: get latest artefacts from circleci
