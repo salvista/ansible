@@ -2462,3 +2462,490 @@ source
 2018-07-04 05:05:48,642 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
 2018-07-04 05:05:48,642 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
 2018-07-04 05:05:49,466 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 386
+2018-07-04 05:31:00,760 p=13533 u=rina |  PLAY [yumrepos] ****************************************************************
+2018-07-04 05:31:00,764 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:31:00,765 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:31:01,591 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 331
+2018-07-04 05:31:01,613 p=13533 u=rina |  TASK [Gathering Facts] *********************************************************
+2018-07-04 05:31:02,720 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:02,725 p=13533 u=rina |  TASK [hxpro.epel : Install epel-release on CentOS] *****************************
+2018-07-04 05:31:03,472 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:03,478 p=13533 u=rina |  TASK [hxpro.epel : Install epel-release on RedHat] *****************************
+2018-07-04 05:31:03,494 p=13533 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:31:03,499 p=13533 u=rina |  TASK [hxpro.nginx : Check IPv6] ************************************************
+2018-07-04 05:31:03,509 p=13533 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:31:03,515 p=13533 u=rina |  TASK [hxpro.nginx : Install nginx] *********************************************
+2018-07-04 05:31:06,282 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:06,289 p=13533 u=rina |  TASK [hxpro.nginx : Nginx config] **********************************************
+2018-07-04 05:31:07,083 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:07,088 p=13533 u=rina |  TASK [hxpro.nginx : Nginx default config] **************************************
+2018-07-04 05:31:07,632 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:07,638 p=13533 u=rina |  TASK [hxpro.nginx : LE payload root folder] ************************************
+2018-07-04 05:31:07,651 p=13533 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:31:07,657 p=13533 u=rina |  TASK [hxpro.nginx : Acme snippet] **********************************************
+2018-07-04 05:31:07,676 p=13533 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:31:07,682 p=13533 u=rina |  TASK [hxpro.nginx : file] ******************************************************
+2018-07-04 05:31:08,005 p=13533 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-geoip.conf)
+2018-07-04 05:31:08,339 p=13533 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-image-filter.conf)
+2018-07-04 05:31:08,645 p=13533 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-perl.conf)
+2018-07-04 05:31:08,951 p=13533 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-xslt-filter.conf)
+2018-07-04 05:31:09,277 p=13533 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-mail.conf)
+2018-07-04 05:31:09,584 p=13533 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-stream.conf)
+2018-07-04 05:31:09,593 p=13533 u=rina |  TASK [hxpro.nginx : Start/enable nginx service] ********************************
+2018-07-04 05:31:10,401 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:10,406 p=13533 u=rina |  TASK [yumrepo : install nginx config file] *************************************
+2018-07-04 05:31:10,970 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:10,975 p=13533 u=rina |  TASK [yumrepo : create yumrepo dir] ********************************************
+2018-07-04 05:31:11,671 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:11,676 p=13533 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:31:12,583 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:12,591 p=13533 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:31:13,444 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:13,452 p=13533 u=rina |  TASK [yumrepo : ensure wget is installed] **************************************
+2018-07-04 05:31:14,308 p=13533 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:31:14,313 p=13533 u=rina |  TASK [yumrepo : get latest artefacts from circleci] ****************************
+2018-07-04 05:31:17,979 p=13533 u=rina |  fatal: [deployserver-rina]: FAILED! => {"changed": true, "cmd": "LATEST_BUILD=$(\n curl -s \"https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/tree/master?circle-token=3f63d2e39060549356336d4924e82e1809deca06&filter=running\" 2>&1 |\n grep build_num |\n awk '{print $3}' |\n sed 's/,//' |\n sort -u |\n tail -n1\n )\n # fetch artefact from latest successful build\n ARTEFACTS=$(\n curl -s https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/${LATEST_BUILD}/artifacts?circle-token=3f63d2e39060549356336d4924e82e1809deca06 |\n grep -o 'https://[^\"]*'\n )\n for url in $ARTEFACTS; do\n name=$(basename ${url})\n wget -q ${url} -O /opt/yumrepo/${name}\n done", "delta": "0:00:03.254826", "end": "2018-07-04 15:31:17.960907", "failed": true, "msg": "non-zero return code", "rc": 4, "start": "2018-07-04 15:31:14.706081", "stderr": "/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long", "stderr_lines": ["/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long"], "stdout": "", "stdout_lines": []}
+2018-07-04 05:31:17,979 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:31:17,981 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:31:18,793 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 1208
+2018-07-04 05:31:18,796 p=13533 u=rina |  PLAY RECAP *********************************************************************
+2018-07-04 05:31:18,796 p=13533 u=rina |  deployserver-rina          : ok=12   changed=0    unreachable=0    failed=1   
+2018-07-04 05:31:18,797 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:31:18,798 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:31:19,625 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:31:19,628 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:31:19,629 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:31:20,451 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:31:20,453 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:31:20,454 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:31:21,275 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:31:21,277 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:31:21,278 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:31:22,143 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:31:22,145 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:31:22,146 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:31:22,964 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:31:22,966 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:31:22,967 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:31:23,787 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:31:23,789 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:31:23,790 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:31:24,610 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 493
+2018-07-04 05:34:36,929 p=17449 u=rina |  playbook: ./appservers.yml
+2018-07-04 05:34:37,744 p=17459 u=rina |  playbook: ./dbservers.yml
+2018-07-04 05:34:38,543 p=17483 u=rina |  playbook: ./yumrepos.yml
+2018-07-04 05:34:39,496 p=17489 u=rina |  playbook: ./site.yml
+2018-07-04 05:36:39,576 p=18317 u=rina |  PLAY [yumrepos] **********************************************************************************************************
+2018-07-04 05:36:39,580 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:36:39,582 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:36:40,417 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 331
+2018-07-04 05:36:40,438 p=18317 u=rina |  TASK [Gathering Facts] ***************************************************************************************************
+2018-07-04 05:36:41,497 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:41,503 p=18317 u=rina |  TASK [hxpro.epel : Install epel-release on CentOS] ***********************************************************************
+2018-07-04 05:36:42,208 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:42,214 p=18317 u=rina |  TASK [hxpro.epel : Install epel-release on RedHat] ***********************************************************************
+2018-07-04 05:36:42,229 p=18317 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:36:42,235 p=18317 u=rina |  TASK [hxpro.nginx : Check IPv6] ******************************************************************************************
+2018-07-04 05:36:42,245 p=18317 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:36:42,251 p=18317 u=rina |  TASK [hxpro.nginx : Install nginx] ***************************************************************************************
+2018-07-04 05:36:44,932 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:44,938 p=18317 u=rina |  TASK [hxpro.nginx : Nginx config] ****************************************************************************************
+2018-07-04 05:36:45,718 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:45,723 p=18317 u=rina |  TASK [hxpro.nginx : Nginx default config] ********************************************************************************
+2018-07-04 05:36:46,258 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:46,263 p=18317 u=rina |  TASK [hxpro.nginx : LE payload root folder] ******************************************************************************
+2018-07-04 05:36:46,276 p=18317 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:36:46,281 p=18317 u=rina |  TASK [hxpro.nginx : Acme snippet] ****************************************************************************************
+2018-07-04 05:36:46,293 p=18317 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:36:46,298 p=18317 u=rina |  TASK [hxpro.nginx : file] ************************************************************************************************
+2018-07-04 05:36:46,624 p=18317 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-geoip.conf)
+2018-07-04 05:36:46,957 p=18317 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-image-filter.conf)
+2018-07-04 05:36:47,261 p=18317 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-perl.conf)
+2018-07-04 05:36:47,570 p=18317 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-xslt-filter.conf)
+2018-07-04 05:36:47,874 p=18317 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-mail.conf)
+2018-07-04 05:36:48,196 p=18317 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-stream.conf)
+2018-07-04 05:36:48,202 p=18317 u=rina |  TASK [hxpro.nginx : Start/enable nginx service] **************************************************************************
+2018-07-04 05:36:49,005 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:49,010 p=18317 u=rina |  TASK [yumrepo : install nginx config file] *******************************************************************************
+2018-07-04 05:36:49,578 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:49,584 p=18317 u=rina |  TASK [yumrepo : create yumrepo dir] **************************************************************************************
+2018-07-04 05:36:49,960 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:49,965 p=18317 u=rina |  TASK [yumrepo : ensure createrepo is installed] **************************************************************************
+2018-07-04 05:36:50,823 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:50,828 p=18317 u=rina |  TASK [yumrepo : ensure createrepo is installed] **************************************************************************
+2018-07-04 05:36:51,865 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:51,871 p=18317 u=rina |  TASK [yumrepo : ensure wget is installed] ********************************************************************************
+2018-07-04 05:36:52,733 p=18317 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:36:52,739 p=18317 u=rina |  TASK [yumrepo : get latest artefacts from circleci] **********************************************************************
+2018-07-04 05:36:56,081 p=18317 u=rina |  fatal: [deployserver-rina]: FAILED! => {"changed": true, "cmd": "LATEST_BUILD=$(\n curl -s \"https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/tree/master?circle-token=3f63d2e39060549356336d4924e82e1809deca06&filter=running\" 2>&1 |\n grep build_num |\n awk '{print $3}' |\n sed 's/,//' |\n sort -u |\n tail -n1\n )\n # fetch artefact from latest successful build\n ARTEFACTS=$(\n curl -s https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/${LATEST_BUILD}/artifacts?circle-token=3f63d2e39060549356336d4924e82e1809deca06 |\n grep -o 'https://[^\"]*'\n )\n for url in $ARTEFACTS; do\n name=$(basename ${url})\n wget -q ${url} -O /opt/yumrepo/${name}\n done", "delta": "0:00:02.927016", "end": "2018-07-04 15:36:56.063638", "failed": true, "msg": "non-zero return code", "rc": 4, "start": "2018-07-04 15:36:53.136622", "stderr": "/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long", "stderr_lines": ["/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long"], "stdout": "", "stdout_lines": []}
+2018-07-04 05:36:56,082 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:36:56,083 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:36:56,903 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 1208
+2018-07-04 05:36:56,906 p=18317 u=rina |  PLAY RECAP ***************************************************************************************************************
+2018-07-04 05:36:56,906 p=18317 u=rina |  deployserver-rina          : ok=12   changed=0    unreachable=0    failed=1   
+2018-07-04 05:36:56,907 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:36:56,908 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:36:57,727 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:36:57,729 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:36:57,730 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:36:58,549 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:36:58,551 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:36:58,552 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:36:59,374 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:36:59,377 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:36:59,378 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:37:00,211 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:37:00,214 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:37:00,215 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:37:01,026 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:37:01,028 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:37:01,029 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:37:01,849 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:37:01,851 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:37:01,852 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:37:02,672 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 493
+2018-07-04 05:40:25,936 p=21797 u=rina |  PLAY [yumrepos] ****************************************************************
+2018-07-04 05:40:25,941 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:40:25,942 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:40:26,981 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 331
+2018-07-04 05:40:27,002 p=21797 u=rina |  TASK [Gathering Facts] *********************************************************
+2018-07-04 05:40:28,071 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:28,076 p=21797 u=rina |  TASK [hxpro.epel : Install epel-release on CentOS] *****************************
+2018-07-04 05:40:28,778 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:28,784 p=21797 u=rina |  TASK [hxpro.epel : Install epel-release on RedHat] *****************************
+2018-07-04 05:40:28,798 p=21797 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:40:28,804 p=21797 u=rina |  TASK [hxpro.nginx : Check IPv6] ************************************************
+2018-07-04 05:40:28,814 p=21797 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:40:28,819 p=21797 u=rina |  TASK [hxpro.nginx : Install nginx] *********************************************
+2018-07-04 05:40:31,516 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:31,522 p=21797 u=rina |  TASK [hxpro.nginx : Nginx config] **********************************************
+2018-07-04 05:40:32,297 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:32,302 p=21797 u=rina |  TASK [hxpro.nginx : Nginx default config] **************************************
+2018-07-04 05:40:32,848 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:32,853 p=21797 u=rina |  TASK [hxpro.nginx : LE payload root folder] ************************************
+2018-07-04 05:40:32,866 p=21797 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:40:32,871 p=21797 u=rina |  TASK [hxpro.nginx : Acme snippet] **********************************************
+2018-07-04 05:40:32,884 p=21797 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:40:32,889 p=21797 u=rina |  TASK [hxpro.nginx : file] ******************************************************
+2018-07-04 05:40:33,284 p=21797 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-geoip.conf)
+2018-07-04 05:40:33,613 p=21797 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-image-filter.conf)
+2018-07-04 05:40:33,918 p=21797 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-perl.conf)
+2018-07-04 05:40:34,223 p=21797 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-xslt-filter.conf)
+2018-07-04 05:40:34,524 p=21797 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-mail.conf)
+2018-07-04 05:40:34,827 p=21797 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-stream.conf)
+2018-07-04 05:40:34,832 p=21797 u=rina |  TASK [hxpro.nginx : Start/enable nginx service] ********************************
+2018-07-04 05:40:35,614 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:35,619 p=21797 u=rina |  TASK [yumrepo : install nginx config file] *************************************
+2018-07-04 05:40:36,176 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:36,181 p=21797 u=rina |  TASK [yumrepo : create yumrepo dir] ********************************************
+2018-07-04 05:40:36,520 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:36,525 p=21797 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:40:37,370 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:37,375 p=21797 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:40:38,238 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:38,244 p=21797 u=rina |  TASK [yumrepo : ensure wget is installed] **************************************
+2018-07-04 05:40:39,104 p=21797 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:40:39,109 p=21797 u=rina |  TASK [yumrepo : get latest artefacts from circleci] ****************************
+2018-07-04 05:40:42,579 p=21797 u=rina |  fatal: [deployserver-rina]: FAILED! => {"changed": true, "cmd": "LATEST_BUILD=$(\n curl -s \"https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/tree/master?circle-token=3f63d2e39060549356336d4924e82e1809deca06&filter=running\" 2>&1 |\n grep build_num |\n awk '{print $3}' |\n sed 's/,//' |\n sort -u |\n tail -n1\n )\n # fetch artefact from latest successful build\n ARTEFACTS=$(\n curl -s https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/${LATEST_BUILD}/artifacts?circle-token=3f63d2e39060549356336d4924e82e1809deca06 |\n grep -o 'https://[^\"]*'\n )\n for url in $ARTEFACTS; do\n name=$(basename ${url})\n wget -q ${url} -O /opt/yumrepo/${name}\n done", "delta": "0:00:03.065125", "end": "2018-07-04 15:40:42.559999", "failed": true, "msg": "non-zero return code", "rc": 4, "start": "2018-07-04 15:40:39.494874", "stderr": "/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long", "stderr_lines": ["/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long"], "stdout": "", "stdout_lines": []}
+2018-07-04 05:40:42,579 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:40:42,580 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:40:43,401 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 1208
+2018-07-04 05:40:43,404 p=21797 u=rina |  PLAY RECAP *********************************************************************
+2018-07-04 05:40:43,404 p=21797 u=rina |  deployserver-rina          : ok=12   changed=0    unreachable=0    failed=1   
+2018-07-04 05:40:43,405 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:40:43,406 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:40:44,240 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:40:44,242 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:40:44,243 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:40:45,066 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:40:45,068 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:40:45,069 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:40:45,888 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:40:45,890 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:40:45,891 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:40:46,726 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:40:46,728 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:40:46,729 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:40:47,560 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:40:47,562 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:40:47,563 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:40:48,403 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:40:48,406 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:40:48,407 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:40:49,237 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 493
+2018-07-04 05:50:54,236 p=26019 u=rina |  PLAY [yumrepos] ****************************************************************
+2018-07-04 05:50:54,241 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:50:54,242 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:50:55,182 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 331
+2018-07-04 05:50:55,203 p=26019 u=rina |  TASK [Gathering Facts] *********************************************************
+2018-07-04 05:50:55,302 p=26053 u=rina |  PLAY [yumrepos] ****************************************************************
+2018-07-04 05:50:55,306 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:50:55,308 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:50:56,166 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 331
+2018-07-04 05:50:56,187 p=26053 u=rina |  TASK [Gathering Facts] *********************************************************
+2018-07-04 05:50:56,313 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:50:56,319 p=26019 u=rina |  TASK [hxpro.epel : Install epel-release on CentOS] *****************************
+2018-07-04 05:50:56,954 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:50:56,959 p=26053 u=rina |  TASK [hxpro.epel : Install epel-release on CentOS] *****************************
+2018-07-04 05:50:57,287 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:50:57,293 p=26019 u=rina |  TASK [hxpro.epel : Install epel-release on RedHat] *****************************
+2018-07-04 05:50:57,309 p=26019 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:50:57,315 p=26019 u=rina |  TASK [hxpro.nginx : Check IPv6] ************************************************
+2018-07-04 05:50:57,326 p=26019 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:50:57,333 p=26019 u=rina |  TASK [hxpro.nginx : Install nginx] *********************************************
+2018-07-04 05:50:57,803 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:50:57,809 p=26053 u=rina |  TASK [hxpro.epel : Install epel-release on RedHat] *****************************
+2018-07-04 05:50:57,825 p=26053 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:50:57,832 p=26053 u=rina |  TASK [hxpro.nginx : Check IPv6] ************************************************
+2018-07-04 05:50:57,843 p=26053 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:50:57,849 p=26053 u=rina |  TASK [hxpro.nginx : Install nginx] *********************************************
+2018-07-04 05:51:06,671 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:06,676 p=26019 u=rina |  TASK [hxpro.nginx : Nginx config] **********************************************
+2018-07-04 05:51:07,425 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:07,431 p=26019 u=rina |  TASK [hxpro.nginx : Nginx default config] **************************************
+2018-07-04 05:51:07,967 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:07,972 p=26019 u=rina |  TASK [hxpro.nginx : LE payload root folder] ************************************
+2018-07-04 05:51:07,984 p=26019 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:51:07,990 p=26019 u=rina |  TASK [hxpro.nginx : Acme snippet] **********************************************
+2018-07-04 05:51:08,002 p=26019 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:51:08,008 p=26019 u=rina |  TASK [hxpro.nginx : file] ******************************************************
+2018-07-04 05:51:08,338 p=26019 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-geoip.conf)
+2018-07-04 05:51:09,120 p=26019 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-image-filter.conf)
+2018-07-04 05:51:10,431 p=26019 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-perl.conf)
+2018-07-04 05:51:10,735 p=26019 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-xslt-filter.conf)
+2018-07-04 05:51:11,040 p=26019 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-mail.conf)
+2018-07-04 05:51:11,348 p=26019 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-stream.conf)
+2018-07-04 05:51:11,354 p=26019 u=rina |  TASK [hxpro.nginx : Start/enable nginx service] ********************************
+2018-07-04 05:51:12,152 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:12,157 p=26019 u=rina |  TASK [yumrepo : install nginx config file] *************************************
+2018-07-04 05:51:12,697 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:12,703 p=26019 u=rina |  TASK [yumrepo : create yumrepo dir] ********************************************
+2018-07-04 05:51:13,025 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:13,030 p=26019 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:51:13,538 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:13,543 p=26053 u=rina |  TASK [hxpro.nginx : Nginx config] **********************************************
+2018-07-04 05:51:13,980 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:13,985 p=26019 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:51:14,776 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:14,782 p=26053 u=rina |  TASK [hxpro.nginx : Nginx default config] **************************************
+2018-07-04 05:51:15,216 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:15,221 p=26019 u=rina |  TASK [yumrepo : ensure wget is installed] **************************************
+2018-07-04 05:51:15,681 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:15,686 p=26053 u=rina |  TASK [hxpro.nginx : LE payload root folder] ************************************
+2018-07-04 05:51:15,699 p=26053 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:51:15,704 p=26053 u=rina |  TASK [hxpro.nginx : Acme snippet] **********************************************
+2018-07-04 05:51:15,716 p=26053 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:51:15,721 p=26053 u=rina |  TASK [hxpro.nginx : file] ******************************************************
+2018-07-04 05:51:16,177 p=26053 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-geoip.conf)
+2018-07-04 05:51:16,531 p=26019 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:16,539 p=26019 u=rina |  TASK [yumrepo : get latest artefacts from circleci] ****************************
+2018-07-04 05:51:16,748 p=26053 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-image-filter.conf)
+2018-07-04 05:51:17,196 p=26053 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-perl.conf)
+2018-07-04 05:51:17,500 p=26053 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-xslt-filter.conf)
+2018-07-04 05:51:17,861 p=26053 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-mail.conf)
+2018-07-04 05:51:18,181 p=26053 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-stream.conf)
+2018-07-04 05:51:18,187 p=26053 u=rina |  TASK [hxpro.nginx : Start/enable nginx service] ********************************
+2018-07-04 05:51:19,035 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:19,040 p=26053 u=rina |  TASK [yumrepo : install nginx config file] *************************************
+2018-07-04 05:51:19,584 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:19,589 p=26053 u=rina |  TASK [yumrepo : create yumrepo dir] ********************************************
+2018-07-04 05:51:19,922 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:19,928 p=26053 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:51:20,060 p=26019 u=rina |  fatal: [deployserver-rina]: FAILED! => {"changed": true, "cmd": "LATEST_BUILD=$(\n curl -s \"https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/tree/master?circle-token=3f63d2e39060549356336d4924e82e1809deca06&filter=running\" 2>&1 |\n grep build_num |\n awk '{print $3}' |\n sed 's/,//' |\n sort -u |\n tail -n1\n )\n # fetch artefact from latest successful build\n ARTEFACTS=$(\n curl -s https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/${LATEST_BUILD}/artifacts?circle-token=3f63d2e39060549356336d4924e82e1809deca06 |\n grep -o 'https://[^\"]*'\n )\n for url in $ARTEFACTS; do\n name=$(basename ${url})\n wget -q ${url} -O /opt/yumrepo/${name}\n done", "delta": "0:00:03.013908", "end": "2018-07-04 15:51:20.038936", "failed": true, "msg": "non-zero return code", "rc": 4, "start": "2018-07-04 15:51:17.025028", "stderr": "/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long", "stderr_lines": ["/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long"], "stdout": "", "stdout_lines": []}
+2018-07-04 05:51:20,061 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:20,062 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:20,809 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:20,814 p=26053 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:51:20,884 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 1208
+2018-07-04 05:51:20,887 p=26019 u=rina |  PLAY RECAP *********************************************************************
+2018-07-04 05:51:20,887 p=26019 u=rina |  deployserver-rina          : ok=12   changed=0    unreachable=0    failed=1   
+2018-07-04 05:51:20,888 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:20,889 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:21,681 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:21,686 p=26053 u=rina |  TASK [yumrepo : ensure wget is installed] **************************************
+2018-07-04 05:51:21,708 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:21,711 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:21,712 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:22,531 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:22,533 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:22,534 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:22,540 p=26053 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:51:22,546 p=26053 u=rina |  TASK [yumrepo : get latest artefacts from circleci] ****************************
+2018-07-04 05:51:23,356 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:23,359 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:23,360 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:24,190 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:24,192 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:24,193 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:25,023 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:25,026 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:25,027 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:25,355 p=26053 u=rina |  fatal: [deployserver-rina]: FAILED! => {"changed": true, "cmd": "LATEST_BUILD=$(\n curl -s \"https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/tree/master?circle-token=3f63d2e39060549356336d4924e82e1809deca06&filter=running\" 2>&1 |\n grep build_num |\n awk '{print $3}' |\n sed 's/,//' |\n sort -u |\n tail -n1\n )\n # fetch artefact from latest successful build\n ARTEFACTS=$(\n curl -s https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/${LATEST_BUILD}/artifacts?circle-token=3f63d2e39060549356336d4924e82e1809deca06 |\n grep -o 'https://[^\"]*'\n )\n for url in $ARTEFACTS; do\n name=$(basename ${url})\n wget -q ${url} -O /opt/yumrepo/${name}\n done", "delta": "0:00:02.360130", "end": "2018-07-04 15:51:25.336842", "failed": true, "msg": "non-zero return code", "rc": 4, "start": "2018-07-04 15:51:22.976712", "stderr": "/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long", "stderr_lines": ["/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long"], "stdout": "", "stdout_lines": []}
+2018-07-04 05:51:25,356 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:25,357 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:25,859 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:25,861 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:25,862 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:26,249 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 1208
+2018-07-04 05:51:26,252 p=26053 u=rina |  PLAY RECAP *********************************************************************
+2018-07-04 05:51:26,252 p=26053 u=rina |  deployserver-rina          : ok=12   changed=0    unreachable=0    failed=1   
+2018-07-04 05:51:26,253 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:26,254 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:26,689 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 493
+2018-07-04 05:51:27,076 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:27,079 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:27,079 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:27,909 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:27,911 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:27,912 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:28,741 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:28,743 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:28,744 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:29,568 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:29,570 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:29,571 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:30,402 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:30,404 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:30,405 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:31,225 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:51:31,228 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:51:31,228 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:51:32,058 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 493
+2018-07-04 05:53:40,614 p=27488 u=rina |  PLAY [yumrepos] ****************************************************************
+2018-07-04 05:53:40,618 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:53:40,619 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:53:41,602 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 331
+2018-07-04 05:53:41,623 p=27488 u=rina |  TASK [Gathering Facts] *********************************************************
+2018-07-04 05:53:42,684 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:42,689 p=27488 u=rina |  TASK [hxpro.epel : Install epel-release on CentOS] *****************************
+2018-07-04 05:53:43,397 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:43,402 p=27488 u=rina |  TASK [hxpro.epel : Install epel-release on RedHat] *****************************
+2018-07-04 05:53:43,418 p=27488 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:53:43,423 p=27488 u=rina |  TASK [hxpro.nginx : Check IPv6] ************************************************
+2018-07-04 05:53:43,434 p=27488 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:53:43,439 p=27488 u=rina |  TASK [hxpro.nginx : Install nginx] *********************************************
+2018-07-04 05:53:46,117 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:46,123 p=27488 u=rina |  TASK [hxpro.nginx : Nginx config] **********************************************
+2018-07-04 05:53:46,880 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:46,885 p=27488 u=rina |  TASK [hxpro.nginx : Nginx default config] **************************************
+2018-07-04 05:53:47,414 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:47,420 p=27488 u=rina |  TASK [hxpro.nginx : LE payload root folder] ************************************
+2018-07-04 05:53:47,432 p=27488 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:53:47,437 p=27488 u=rina |  TASK [hxpro.nginx : Acme snippet] **********************************************
+2018-07-04 05:53:47,449 p=27488 u=rina |  skipping: [deployserver-rina]
+2018-07-04 05:53:47,454 p=27488 u=rina |  TASK [hxpro.nginx : file] ******************************************************
+2018-07-04 05:53:47,781 p=27488 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-geoip.conf)
+2018-07-04 05:53:48,124 p=27488 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-image-filter.conf)
+2018-07-04 05:53:48,428 p=27488 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-perl.conf)
+2018-07-04 05:53:48,734 p=27488 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-xslt-filter.conf)
+2018-07-04 05:53:49,044 p=27488 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-mail.conf)
+2018-07-04 05:53:49,347 p=27488 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-stream.conf)
+2018-07-04 05:53:49,353 p=27488 u=rina |  TASK [hxpro.nginx : Start/enable nginx service] ********************************
+2018-07-04 05:53:50,143 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:50,149 p=27488 u=rina |  TASK [yumrepo : install nginx config file] *************************************
+2018-07-04 05:53:50,709 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:50,714 p=27488 u=rina |  TASK [yumrepo : create yumrepo dir] ********************************************
+2018-07-04 05:53:51,059 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:51,064 p=27488 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:53:52,105 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:52,110 p=27488 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 05:53:52,998 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:53,003 p=27488 u=rina |  TASK [yumrepo : ensure wget is installed] **************************************
+2018-07-04 05:53:54,014 p=27488 u=rina |  ok: [deployserver-rina]
+2018-07-04 05:53:54,019 p=27488 u=rina |  TASK [yumrepo : get latest artefacts from circleci] ****************************
+2018-07-04 05:53:57,126 p=27488 u=rina |  fatal: [deployserver-rina]: FAILED! => {"changed": true, "cmd": "LATEST_BUILD=$(\n curl -s \"https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/tree/master?circle-token=3f63d2e39060549356336d4924e82e1809deca06&filter=running\" 2>&1 |\n grep build_num |\n awk '{print $3}' |\n sed 's/,//' |\n sort -u |\n tail -n1\n )\n # fetch artefact from latest successful build\n ARTEFACTS=$(\n curl -s https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/${LATEST_BUILD}/artifacts?circle-token=3f63d2e39060549356336d4924e82e1809deca06 |\n grep -o 'https://[^\"]*'\n )\n for url in $ARTEFACTS; do\n name=$(basename ${url})\n wget -q ${url} -O /opt/yumrepo/${name}\n done", "delta": "0:00:02.691329", "end": "2018-07-04 15:53:57.107258", "failed": true, "msg": "non-zero return code", "rc": 4, "start": "2018-07-04 15:53:54.415929", "stderr": "/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long", "stderr_lines": ["/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long"], "stdout": "", "stdout_lines": []}
+2018-07-04 05:53:57,127 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:53:57,129 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:53:57,967 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 1208
+2018-07-04 05:53:57,970 p=27488 u=rina |  PLAY RECAP *********************************************************************
+2018-07-04 05:53:57,970 p=27488 u=rina |  deployserver-rina          : ok=12   changed=0    unreachable=0    failed=1   
+2018-07-04 05:53:57,970 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:53:57,971 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:53:58,794 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:53:58,796 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:53:58,797 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:53:59,695 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:53:59,697 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:53:59,698 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:54:00,608 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:54:00,611 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:54:00,612 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:54:01,423 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:54:01,426 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:54:01,426 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:54:02,246 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:54:02,248 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:54:02,249 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:54:03,115 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 05:54:03,117 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 05:54:03,118 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 05:54:03,992 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 493
+2018-07-04 06:08:18,920 p=1060 u=rina |  PLAY [yumrepos] ****************************************************************
+2018-07-04 06:08:18,924 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 06:08:18,925 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 06:08:19,760 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 331
+2018-07-04 06:08:19,782 p=1060 u=rina |  TASK [Gathering Facts] *********************************************************
+2018-07-04 06:08:20,926 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:20,931 p=1060 u=rina |  TASK [hxpro.epel : Install epel-release on CentOS] *****************************
+2018-07-04 06:08:21,680 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:21,685 p=1060 u=rina |  TASK [hxpro.epel : Install epel-release on RedHat] *****************************
+2018-07-04 06:08:21,699 p=1060 u=rina |  skipping: [deployserver-rina]
+2018-07-04 06:08:21,705 p=1060 u=rina |  TASK [hxpro.nginx : Check IPv6] ************************************************
+2018-07-04 06:08:21,714 p=1060 u=rina |  skipping: [deployserver-rina]
+2018-07-04 06:08:21,720 p=1060 u=rina |  TASK [hxpro.nginx : Install nginx] *********************************************
+2018-07-04 06:08:24,438 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:24,444 p=1060 u=rina |  TASK [hxpro.nginx : Nginx config] **********************************************
+2018-07-04 06:08:25,226 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:25,231 p=1060 u=rina |  TASK [hxpro.nginx : Nginx default config] **************************************
+2018-07-04 06:08:25,767 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:25,772 p=1060 u=rina |  TASK [hxpro.nginx : LE payload root folder] ************************************
+2018-07-04 06:08:25,785 p=1060 u=rina |  skipping: [deployserver-rina]
+2018-07-04 06:08:25,790 p=1060 u=rina |  TASK [hxpro.nginx : Acme snippet] **********************************************
+2018-07-04 06:08:25,802 p=1060 u=rina |  skipping: [deployserver-rina]
+2018-07-04 06:08:25,807 p=1060 u=rina |  TASK [hxpro.nginx : file] ******************************************************
+2018-07-04 06:08:26,130 p=1060 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-geoip.conf)
+2018-07-04 06:08:26,461 p=1060 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-image-filter.conf)
+2018-07-04 06:08:26,766 p=1060 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-perl.conf)
+2018-07-04 06:08:27,071 p=1060 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-http-xslt-filter.conf)
+2018-07-04 06:08:27,378 p=1060 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-mail.conf)
+2018-07-04 06:08:27,696 p=1060 u=rina |  ok: [deployserver-rina] => (item=/usr/share/nginx/modules/mod-stream.conf)
+2018-07-04 06:08:27,702 p=1060 u=rina |  TASK [hxpro.nginx : Start/enable nginx service] ********************************
+2018-07-04 06:08:28,489 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:28,495 p=1060 u=rina |  TASK [yumrepo : install nginx config file] *************************************
+2018-07-04 06:08:29,052 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:29,058 p=1060 u=rina |  TASK [yumrepo : create yumrepo dir] ********************************************
+2018-07-04 06:08:29,399 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:29,404 p=1060 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 06:08:30,269 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:30,275 p=1060 u=rina |  TASK [yumrepo : ensure createrepo is installed] ********************************
+2018-07-04 06:08:31,129 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:31,135 p=1060 u=rina |  TASK [yumrepo : ensure wget is installed] **************************************
+2018-07-04 06:08:31,994 p=1060 u=rina |  ok: [deployserver-rina]
+2018-07-04 06:08:31,999 p=1060 u=rina |  TASK [yumrepo : get latest artefacts from circleci] ****************************
+2018-07-04 06:08:35,067 p=1060 u=rina |  fatal: [deployserver-rina]: FAILED! => {"changed": true, "cmd": "LATEST_BUILD=$(\n curl -s \"https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/tree/master?circle-token=3f63d2e39060549356336d4924e82e1809deca06&filter=running\" 2>&1 |\n grep build_num |\n awk '{print $3}' |\n sed 's/,//' |\n sort -u |\n tail -n1\n )\n # fetch artefact from latest successful build\n ARTEFACTS=$(\n curl -s https://circleci.com/api/v1.1/project/github/linuxdojo-training/pingtest/${LATEST_BUILD}/artifacts?circle-token=3f63d2e39060549356336d4924e82e1809deca06 |\n grep -o 'https://[^\"]*'\n )\n for url in $ARTEFACTS; do\n name=$(basename ${url})\n wget -q ${url} -O /opt/yumrepo/${name}\n done", "delta": "0:00:02.656134", "end": "2018-07-04 16:08:35.048526", "failed": true, "msg": "non-zero return code", "rc": 4, "start": "2018-07-04 16:08:32.392392", "stderr": "/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long", "stderr_lines": ["/opt/yumrepo/zuora-min.js&quot;},&quot;status&quot;:404,&quot;logging_enabled&quot;:false,&quot;log_channels&quot;:false,&quot;instrument&quot;:false,&quot;bitbucketClientId&quot;:&quot;4DMqkNUJUMcdfnFtDU&quot;,&quot;is_2_0_enabled&quot;:true,&quot;githubClientId&quot;:&quot;78a2ba87f071c28e65bb&quot;,&quot;env&quot;:&quot;production&quot;,&quot;auth_host&quot;:null,&quot;slackClientId&quot;:null,&quot;flash&quot;:null,&quot;can_create_user&quot;:true,&quot;stripePublishableKey&quot;:&quot;pk_ZPBtv9wYtkUh6YwhwKRqL0ygAb0Q9&quot;,&quot;elevio_enabled&quot;:null}: File name too long"], "stdout": "", "stdout_lines": []}
+2018-07-04 06:08:35,068 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 06:08:35,069 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 06:08:35,888 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 1208
+2018-07-04 06:08:35,892 p=1060 u=rina |  PLAY RECAP *********************************************************************
+2018-07-04 06:08:35,892 p=1060 u=rina |  deployserver-rina          : ok=12   changed=0    unreachable=0    failed=1   
+2018-07-04 06:08:35,892 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 06:08:35,893 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 06:08:36,712 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 06:08:36,714 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 06:08:36,715 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 06:08:37,548 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 06:08:37,551 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 06:08:37,552 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 06:08:38,377 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 06:08:38,379 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 06:08:38,380 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 06:08:39,214 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 06:08:39,217 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 06:08:39,218 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 06:08:40,081 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 06:08:40,083 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 06:08:40,084 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 06:08:40,915 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/series?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 16
+2018-07-04 06:08:40,918 urllib3.util.retry Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2018-07-04 06:08:40,919 urllib3.connectionpool Starting new HTTPS connection (1): app.datadoghq.com
+2018-07-04 06:08:41,739 urllib3.connectionpool https://app.datadoghq.com:443 "POST /api/v1/events?api_key=ee678143fa7f46b59d470fc3bb879aa6 HTTP/1.1" 202 493
